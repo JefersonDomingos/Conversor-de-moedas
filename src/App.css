@@ -1,0 +1,33 @@
+.App{
+    max-width: 900px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive,sans-serif;
+    padding-top: 20px;
+    color:#800000;
+    transition: .4s;
+}
+
+h1:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.linha{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 500px){
+    .linha{
+        display: block;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
