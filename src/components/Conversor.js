@@ -15,7 +15,8 @@ export default class Conversor extends Component {
     converter(){
       let valorMoedaA = `${this.props.moedaA}`;
       let valorMoedaB = `${this.props.moedaB}`;
-      let url = `https://api.freecurrencyapi.com/v1/latest?apikey=v1ZudRLHwmKbMHpUSX7IG2k7zEJHVVc6sX83qC4Z&currencies=${valorMoedaB}&base_currency=${valorMoedaA}`;
+      const key = process.env.REACT_APP_API_KEY;
+      let url = `https://api.freecurrencyapi.com/v1/latest?apikey=${key}&currencies=${valorMoedaB}&base_currency=${valorMoedaA}`;
       console.log(this.state);
       
       fetch(url)
